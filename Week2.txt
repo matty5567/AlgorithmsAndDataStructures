@@ -13,6 +13,8 @@ Linked Lists: Rather than storing data in a contiguous block of memory, each ele
 
 Use Arrays for high average speed however use linked lists when you need the guarantee that no operations will take a long time.
 
+Week 2 Course Link (coursera):
+	https://www.coursera.org/learn/algorithms-part1/home/week/2	
 
 Useful Videos:
 Array Implementation of stack: 
