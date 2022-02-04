@@ -1,0 +1,50 @@
+Notes from Week 1 of Introduction to Algorithms (Coursera)
+
+
+Conectivity Problem
+
+Given a graph of nodes and edges, are two nodes connected? Implement Union() and isConnected() methods.
+
+
+Quick Find (eager approach):
+	Idea: Store an array to represent graph. P union Q is implemented by setting all elements in the array that are equal to P, to Q. Two nodes p, q are connected if id[p] == id[q]
+	Problem: Slow, quadratic time complexity to union n elements
+
+
+Quick-Union (lazy approach):
+	Idea: use an array to represent a forest (multiple trees) where id[i] is the parent of i. P and Q are connected if they have the same root. P union Q is implemented by setting the id of P's root to the id of Q's root. 
+	Problems: Trees can grow long tail so finding root can take up to N steps
+
+
+Weighted Quick Union:
+	Idea: similar approach to Quick-Union but keep track of size of trees and always link root of smaller tree to root of larger tree. This limits the length of the tree to log(N), so now Union and Connected operatons take log(N) time.
+
+Analysis Of Algorithms
+
+We can reduce order-of-growth classifications to 1, logN, N, NlogN, N^2, N^3, 2^N.
+
+Big Theta Notations: Asymptotic order of growth
+Big Oh: Upper Bound
+Big Omega: Lower Bound
+
+We can know that we have an optimal algorithm if Big Oh == Big Omega 
+
+
+Useful Videos:
+
+CS Dojo: https://www.youtube.com/watch?v=D6xkbGLQesk&ab_channel=CSDojo
+PyCon talk: https://www.youtube.com/watch?v=duvZ-2UK0fc&ab_channel=PyCon2018
+
+MyCodeSchool: https://www.youtube.com/watch?v=8syQKTdgdzc&ab_channel=mycodeschool
+
+
+Useful Blogs:
+	
+Time complextiy in python https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7
+
+
+Some Relevant Leet Code Challenges:
+		
+https://leetcode.com/problems/satisfiability-of-equality-equations/ (medium)
+
+https://leetcode.com/problems/number-of-islands/ (medium)
