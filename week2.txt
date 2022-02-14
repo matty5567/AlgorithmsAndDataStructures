@@ -1,4 +1,5 @@
-Week 1: Stacks and Queues Notes
+
+Notes from week 2 of Coursera Introduction to Algorithms (https://www.coursera.org/learn/algorithms-part1/home/week/2)
 
 Stacks: Like a stack of books, add and remove from the top, “last in first out”. Basic functions: Push (Add item to the stack), Pop (remove item from stack), isEmpty (check if stack is empty).
 
@@ -13,10 +14,20 @@ Linked Lists: Rather than storing data in a contiguous block of memory, each ele
 
 Use Arrays for high average speed however use linked lists when you need the guarantee that no operations will take a long time.
 
-Week 2 Course Link (coursera):
-	https://www.coursera.org/learn/algorithms-part1/home/week/2	
+
+Sorting
+
+Selection Sort: in iteration i find index of smallest remaining entry, then swap i[i] with i[min]. Quadratic time, linear number of exchanges.
+
+Insertion Sort: in iteration i, swap a[i] with each entry to its left that is larger. Cmplexity depends on array, best case is linear compares and 0 exchanges (if already sorted), worst case quadratic compares and quadratic exchanges.
+
+Shellsort: h-sort array for decreasing sequence of values of h. Used for embedded systems since small code footprint, fast unless huge array
+
+
 
 Useful Videos:
+
+
 Array Implementation of stack: 
 	https://www.youtube.com/watch?v=sFVxsglODoo&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=15&ab_channel=mycodeschool
 Linked list implementation of stack:
