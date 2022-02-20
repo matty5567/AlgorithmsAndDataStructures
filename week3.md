@@ -8,6 +8,6 @@ course link: https://www.coursera.org/learn/algorithms-part1/home/week/3
 <B>Main Idea</B>: Recursively split the array, sort each half, then merge 
 
 ![](./assets/Merge_sort_algorithm_diagram.svg)
-
+<img src = "./assets/Merge_sort_algorithm_diagram.svg">
 
 ## Quicksort
