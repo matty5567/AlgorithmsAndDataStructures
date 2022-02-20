@@ -15,6 +15,7 @@ void merge(int *arr, int *aux, int lo, int mid, int hi){
 
 		if (i > mid) {             arr[n] = aux[j++];}
 		else if (j > hi) {         arr[n] = aux[i++];}
+		// less than or equal required here for stability (see week 3 notes)
 		else if (aux[i] <= aux[j]){arr[n] = aux[i++];}
 		else {                     arr[n] = aux[j++];};	
 		};

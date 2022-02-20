@@ -7,10 +7,10 @@ void merge(int *arr, int *aux, int lo, int mid, int hi){
 	int j = mid + 1;
 
 	for (int k=lo; k<=hi; k++){
-		if      (i > mid){         arr[k] = aux[j++];}
-		else if (j > hi){          arr[k] = aux[i++];}
-		else if (aux[i] < aux[j]){ arr[k] = aux[i++];}
-		else {                     arr[k] = aux[j++];}
+		if      (i > mid){          arr[k] = aux[j++];}
+		else if (j > hi){           arr[k] = aux[i++];}
+		else if (aux[i] <= aux[j]){ arr[k] = aux[i++];}
+		else {                      arr[k] = aux[j++];}
 	};
 };
 
