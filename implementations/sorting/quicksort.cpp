@@ -9,6 +9,17 @@ Main idea:
 */
 
 #include <iostream>
+#include "knuth_shuffle.h"
+
+void shuffle(int *arr, int len_arr){
+    for (int i=0; i<len_arr; i++){
+        int swapPos = std::rand() % (i + 1);
+        int tmp = arr[i];
+        arr[i] = arr[swapPos];
+        arr[swapPos] = tmp;
+    };
+};
+
 
 void exch (int *arr, int a, int b){
     /*
@@ -25,7 +36,6 @@ void quicksort (int *arr, int start, int end) {
 
 
     if (start==end){
-        std::cout << "return" << '\n';
         return;
     };
 
@@ -52,10 +62,7 @@ int main () {
     int arr_len = 10;
     int arr[arr_len] = {10, 2, 7, 5, 6, 9, 8, 1, 3, 4};
 
-    for (auto &x: arr){
-        std::cout << x << " ";
-    };    
-    std::cout << '\n';
+    shuffle(arr, arr_len);
 
     quicksort(arr, 0, arr_len-1);
 
