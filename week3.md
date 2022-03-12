@@ -1,4 +1,4 @@
-# Week 3 Notes from week 2 of Coursera Introduction to Algorithms 
+# Notes from week 3 of Coursera Introduction to Algorithms 
 
 <B>Course link</B>: https://www.coursera.org/learn/algorithms-part1/home/week/3
 
@@ -23,7 +23,7 @@
 
 <B>Algorithm Characteristics</B>:
 - NlogN time complexity
-- Mergesort uses extra space proportional to N (need to build auxilliary array)
+- Mergesort uses extra space proportional to N (need to build auxilliary arrays)
 - It is possible to do this algorithm in place, but not practical so not used
 
 <br>
@@ -66,7 +66,7 @@
 
 <b>Quicksort with 3-way partitioning</b>:
 
-If the array has duplicates and all items equal to the partitioning element are put on one side, then time complexity can degrade to $\frac{1}{2}$ N <sup>2</sup> 
+If the array has duplicates and all items equal to the partitioning element are put on one side, then time complexity can degrade to 1/2 N <sup>2</sup> 
 
 The solution is to partition the array into 3 parts:
 - Entries less than the partition element
@@ -91,3 +91,26 @@ Stable sorting algorithms:
 Unstable sorting algorithms:
 - Shellsort
 - Quicksort
+
+<br>
+
+# Extra Resources
+
+## Blogs
+- Timsort (sorting algo used by python): https://www.geeksforgeeks.org/timsort/
+- Quicksort vs Mergesort: https://www.geeksforgeeks.org/quick-sort-vs-merge-sort/#:~:text=Merge%20sort%20is%20more%20efficient,larger%20array%20size%20or%20datasets.&text=Quick%20sort%20is%20more%20efficient,is%20sorted%20in%20main%20memory.
+
+<br>
+
+## Videos
+
+- MyCodeSchool Merge Sort: https://www.youtube.com/watch?v=TzeBrDU-JaY&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=5&ab_channel=mycodeschool
+- MyCodeSchool Quicksort: https://www.youtube.com/watch?v=0nlPxaC2lTw&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=6&ab_channel=mycodeschool
+- MyCodeSchool Analysis of Mergesort: https://www.youtube.com/watch?v=0nlPxaC2lTw&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=7&ab_channel=mycodeschool
+- MyCodeSchool Analysis of Quicksort: https://www.youtube.com/watch?v=3Bbm3Prd5Fo&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=8&ab_channel=mycodeschool
+
+
+## Leet Code Exercises
+- Easy: https://leetcode.com/problems/merge-sorted-array/submissions/
+- Medium: 
+- Hard: 

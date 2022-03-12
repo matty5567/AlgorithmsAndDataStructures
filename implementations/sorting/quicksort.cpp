@@ -9,7 +9,7 @@ Main idea:
 */
 
 #include <iostream>
-#include "knuth_shuffle.h"
+#include <time.h> 
 
 void shuffle(int *arr, int len_arr){
     for (int i=0; i<len_arr; i++){
@@ -40,16 +40,18 @@ void quicksort (int *arr, int start, int end) {
     };
 
     int i = start;
-    int j = end;
+    int lt = start;
+    int gt = end;
 
-    while (i != j){
-        if (arr[i+1] <= arr[i]){
-            exch(arr, i, i+1);
+    while (i != gt){
+        if (arr[i+1] == arr[i]){
             i ++;
         }
+        else if (arr[i+1] < arr[i]){
+            exch(arr, lt++, ++i);
+        }
         else {
-            exch(arr, j, i+1);
-            j --;
+            exch(arr, gt--, i+1);
         };
     };
 
@@ -59,9 +61,10 @@ void quicksort (int *arr, int start, int end) {
 
 
 int main () {
-    int arr_len = 10;
-    int arr[arr_len] = {10, 2, 7, 5, 6, 9, 8, 1, 3, 4};
+    const int arr_len = 10;
+    int arr[arr_len] = {10, 2, 7, 5, 6, 7, 8, 1, 3, 4};
 
+    std::srand(time(NULL));
     shuffle(arr, arr_len);
 
     quicksort(arr, 0, arr_len-1);
@@ -71,4 +74,6 @@ int main () {
     };
     std::cout << std::endl;
 };
+
+
 
