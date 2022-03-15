@@ -109,3 +109,18 @@ A binary search tree is a binary tree in symmetric order, which means that node'
 
 Downsides of Hibbard Deletion:
 - Not symmetric, after many random inserts and deletes, the tree becomes skewed, now sqr(N) not log(N)
+
+
+## Videos:
+- MyCodeSchool: https://www.youtube.com/watch?v=pYT9F8_LFTM&ab_channel=mycodeschool
+- MIT OpenCourseWare: https://www.youtube.com/watch?v=9Jry5-82I68&ab_channel=MITOpenCourseWare
+
+
+## LeetCode:
+- Easy: https://leetcode.com/problems/same-tree/
+- Medium: https://leetcode.com/problems/kth-largest-element-in-an-array/
+- Hard: https://leetcode.com/problems/data-stream-as-disjoint-intervals/
+
+
+## Extra Resources:
+- Python heapq implementation: https://github.com/python/cpython/blob/3.10/Lib/heapq.py
